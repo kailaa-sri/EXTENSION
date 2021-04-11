@@ -1,0 +1,22 @@
+{
+    "name": "System Diagnostics",
+    "description": "Is your device healthy??Battery,CPU",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "/images/icon.jpg",
+            "128": "/images/icon1.jpg"
+        }
+    },
+    "icons": {
+        "16": "/images/icon.jpg",
+        "128": "/images/icon1.jpg"
+    },
+    "permissions": ["system.display", "system.cpu", "system.memory", "activeTab", "scripting", "storage"],
+    "background": {
+        "service_worker": "background.js"
+    }
+
+}
