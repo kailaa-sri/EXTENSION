@@ -32,13 +32,9 @@ function Init() {
 
 chrome.runtime.onMessageExternal.addListener(
     function(request, sender, sendResponse) {
-        console.log(request);
-        console.log(sender);
-        console.log(sendResponse);
-        console.log(dataset);
+
         sendResponse({ reply: dataset })
 
-        //console.log("Message received\nrequest:" + request.msg + "\nsender:" + sender + "sendResponse:" + sendResponse);
     }
 );
 
