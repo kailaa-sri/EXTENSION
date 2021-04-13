@@ -4,7 +4,7 @@ function myFunction() {
     setInterval(function() { Init(); }, 3000);
 }
 
-var dataset;
+var dataset = 10;
 
 function Init() {
 
@@ -17,12 +17,14 @@ function Init() {
         document.getElementById("model").innerHTML = cpu.modelName;
         dataset;
         var cputotal = 0;
-        var cpuidle = 0;
+        var cputot = 0;
         for (i = 0; i < cpu.numOfProcessors; i++) {
             cputotal = cpu.processors[i].usage.total - cpu.processors[i].usage.idle;
-            cpuidle = cpuidle + cpu.processors[i].usage.idle;
-            dataset = cputotal / 33333333;
+            cputot = cpu.processors[i].usage.total + cputot;
+            //dataset = cputotal / cpu.processors[i].usage.total;
         }
+        dataset = cputotal / cputot;
+
 
     });
 
