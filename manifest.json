@@ -1,6 +1,6 @@
 {
     "name": "System Diagnostics",
-    "description": "Is your device healthy??Battery,CPU",
+    "description": "Chrome Diagnostics",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
