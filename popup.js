@@ -4,7 +4,7 @@ function myFunction() {
     setInterval(function() { Init(); }, 3000);
 }
 
-var dataset = 10;
+var dataset = 0;
 
 function Init() {
 
